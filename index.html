@@ -1,26 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Situs Pribadi Diatra</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situs Pribadi Dino Hariatma Putra</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
             color: #333;
         }
-        h1 {
-            color: #0056b3;
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
         }
-        p {
+        header {
+            background: #004a7c;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #007bff 3px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
             font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+            margin-top: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #004a7c;
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 10px;
+        }
+        .course-list, .research-list {
+            list-style: none;
+            padding: 0;
+        }
+        .course-list li, .research-list li {
+            background: #f4f4f4;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-left: 5px solid #007bff;
+            border-radius: 5px;
+        }
+        .course-list h3, .research-list h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .research-list p {
+            margin-bottom: 5px;
+        }
+        .research-year {
+            font-weight: bold;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <h1>Halo, Saya [Nama Anda]!</h1>
-    <p>Selamat datang di situs pribadi saya.</p>
-    <p>Ini adalah tempat di mana saya akan berbagi proyek dan informasi lainnya.</p>
+    <header>
+        <div class="container">
+            <h1>Dino Hariatma Putra</h1>
+            <p>Dosen & Peneliti</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="courses">
+            <h2>Mata Kuliah yang Saya Ajar</h2>
+            <ul class="course-list">
+                <li>
+                    <h3>Pemrograman Berorientasi Objek</h3>
+                    <p>Mata kuliah ini memperkenalkan konsep dasar dan lanjutan dari pemrograman berorientasi objek menggunakan bahasa Java.</p>
+                </li>
+                <li>
+                    <h3>Struktur Data dan Algoritma</h3>
+                    <p>Membahas tentang berbagai struktur data fundamental seperti array, linked list, stack, queue, tree, dan graph beserta algoritma yang menyertainya.</p>
+                </li>
+                <li>
+                    <h3>Kecerdasan Buatan</h3>
+                    <p>Pengantar konsep-konsep inti dalam kecerdasan buatan, termasuk search algorithms, machine learning, dan neural networks.</p>
+                </li>
+                 </ul>
+        </section>
+
+        <section id="research">
+            <h2>Riwayat Penelitian</h2>
+            <ul class="research-list">
+                <li>
+                    <h3>Pengembangan Algoritma Optimasi untuk Penjadwalan</h3>
+                    <p class="research-year">Tahun: 2023</p>
+                    <p>Penelitian ini berfokus pada penerapan algoritma genetika untuk menyelesaikan masalah penjadwalan mata kuliah di lingkungan universitas.</p>
+                </li>
+                <li>
+                    <h3>Analisis Sentimen pada Media Sosial untuk Prediksi Tren Pasar</h3>
+                    <p class="research-year">Tahun: 2021</p>
+                    <p>Studi tentang penggunaan teknik Natural Language Processing (NLP) untuk menganalisis opini publik terhadap suatu produk dari data Twitter.</p>
+                </li>
+                 </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Dino Hariatma Putra. Hak Cipta Dilindungi.</p>
+    </footer>
+
 </body>
 </html>
